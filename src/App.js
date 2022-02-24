@@ -22,7 +22,7 @@ export default function App() {
         localStorage.setItem("highscore", JSON.stringify(numRolls));
       }
     }
-  }, [dice]);
+  }, [dice, numRolls, highscore]);
 
   function allNewDice() {
     const newDice = [];
